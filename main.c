@@ -75,7 +75,7 @@ void *hacker_func(void *x_void_ptr)
         sem_post(mutex);
     }
 
-    sem_post(mutex);
+    sem_post(barrier);
     return NULL;
 }
 
@@ -136,7 +136,7 @@ void *serf_func(void *x_void_ptr)
         sem_post(mutex);
     }
 
-    sem_post(mutex);
+    sem_post(barrier);
     return NULL;
 }
 
